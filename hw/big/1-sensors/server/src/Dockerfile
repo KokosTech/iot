@@ -1,21 +1,17 @@
 FROM python:3.10 AS base
 
 WORKDIR /app
-
 COPY requirements.txt .
 
-RUN pip install -r requirements.txt -target /python-libs
+RUN pip install -r requirements.txt --target /python-libs
 
 FROM python:3.10-slim AS app
 
 WORKDIR /app
-
 COPY --from=base /python-libs /python-libs
-
 COPY . .
 
 ENV PYTHONPATH=/python-libs
 
 EXPOSE 5000
-
 CMD ["python", "app.py"]

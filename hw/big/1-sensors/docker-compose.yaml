@@ -1,0 +1,31 @@
+services:
+  server:
+    container_name: iot-sensors-server-01
+    image: iot-sensors-server
+    ports:
+      - 127.0.0.1:5000:5000
+      - 5005:5000
+    working_dir: /app
+    volumes:
+      - db:/app/static
+    networks:
+      - commonIoTNetwork
+
+  client:
+    container_name: iot-sensors-client-01
+    image: iot-sensors-client
+    working_dir: /app
+    networks:
+      - commonIoTNetwork
+    depends_on: 
+      - server
+    env_file:
+      - .env
+
+volumes:
+  db:
+    external: false
+
+networks:
+  commonIoTNetwork: 
+ 
