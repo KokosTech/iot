@@ -3,8 +3,8 @@ services:
     container_name: iot-sensors-server-01
     image: iot-sensors-server
     ports:
-      - 127.0.0.1:5000:5000
-      - 5005:5000
+      - 5000:5000
+      - 5005:5000 # this is for debugging on macOS (AirPlay port)
     working_dir: /app
     volumes:
       - db:/app/static
@@ -28,4 +28,4 @@ volumes:
 
 networks:
   commonIoTNetwork: 
- 
+    external: false

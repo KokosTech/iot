@@ -46,7 +46,7 @@ def join_threads(threads: [threading.Thread]):
         i.join()    
 
 if __name__ == '__main__':
-    sleep(3)
+    sleep(5)
     term_num = int(os.getenv('THERM_NUM'))    
     threads = create_threads(term_num)
     join_threads(threads=threads)
