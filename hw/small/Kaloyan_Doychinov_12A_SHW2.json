@@ -1,0 +1,129 @@
+{
+  "thingId": "smartHome.namespace:SmartBathroomMirror",
+  "policyId": "smartHome.namespace:SmartBathroomMirrorPolicy",
+  "definition": "org.eclipse.ditto:SmartBathroomMirror:1.0.1",
+  "attributes": {
+    "location": "Master Bathroom",
+    "manufacturer": "SmartHome Solutions",
+    "installationDate": "21/11/2023",
+    "uptime": 3123,
+    "softwareVersion": "1.0.1",
+    "hardwareVersion": "1.0.1",
+    "serialNumber": "1234567890",
+    "model": "SmartBathroomMirror"
+  },
+  "features": {
+    "humiditySensor": {
+      "properties": {
+        "humidity": 50,
+        "connected": true
+      },
+      "desiredProperties": {
+        "humidity": 45,
+        "connected": true
+      }
+    },
+    "temperatureSensor": {
+      "properties": {
+        "temperature": 24,
+        "connected": true
+      },
+      "desiredProperties": {
+        "temperature": 22,
+        "connected": true
+      }
+    },
+    "internetConnection": {
+      "properties": {
+        "connected": true,
+        "weatherForecast": "Sunny",
+        "weatherForecastIcon": "sun",
+        "weatherForecastTemperature": 24,
+        "weatherForecastHumidity": 50,
+        "weatherForecastWindSpeed": 10,
+        "weatherForecastWindDirection": "NE",
+        "weatherForecastSunrise": "06:00",
+        "weatherForecastSunset": "18:00",
+        "weatherForecast8h": {
+          "1": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          },
+          "2": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          },
+          "3": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          },
+          "4": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          },
+          "5": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          },
+          "6": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          },
+          "7": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          },
+          "8": {
+            "temperature": 24,
+            "humidity": 50,
+            "windSpeed": 10,
+            "windDirection": "NE",
+            "icon": "sun"
+          }
+        }
+      },
+      "desiredProperties": {
+        "connected": true
+      }
+    },
+    "display": {
+      "properties": {
+        "on": true,
+        "brightness": 80
+      },
+      "desiredProperties": {
+        "on": true,
+        "brightness": 100
+      }
+    },
+    "fogPreventionSystem": {
+      "properties": {
+        "on": false
+      },
+      "desiredProperties": {
+        "on": true
+      }
+    }
+  }
+}
