@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com%22%3E/"></script>
+</head>
+<body>
+    <div class="grid min-h-screen w-full lg:grid-cols-[280px_1fr]">
+        <div class="hidden border-r bg-gradient-to-r from-green-100 to-blue-100 lg:block dark:bg-gradient-to-r dark:from-green-800 dark:to-blue-800">
+          <div class="flex h-full max-h-screen flex-col gap-2 items-center">
+            <div class="flex flex-col h-[200px] items-center border-b px-6 py-4">
+              <img
+                src="/placeholder.svg"
+                width="100"
+                height="100"
+                class="rounded-full"
+                alt="Profile Picture"
+                style="aspect-ratio:100/100;object-fit:cover"
+              />
+              <a class="flex items-center gap-2 font-semibold mt-2" href="#" rel="ugc">
+                <span class="">John Doe</span>
+              </a>
+              <div class="flex gap-2 mt-2">
+                <a href="#" rel="ugc">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6 text-blue-600 hover:text-blue-800 dark:text-blue-300 dark:hover:text-blue-100"
+                  >
+                    <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                  </svg>
+                </a>
+                <a href="#" rel="ugc">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6 text-blue-400 hover:text-blue-600 dark:text-blue-200 dark:hover:text-blue-400"
+                  >
+                    <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                  </svg>
+                </a>
+                <a href="#" rel="ugc">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-6 w-6 text-blue-700 hover:text-blue-900 dark:text-blue-400 dark:hover:text-blue-600"
+                  >
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect width="4" height="12" x="2" y="9"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="flex-1 overflow-auto py-2">
+              <nav class="grid items-start px-4 text-sm font-medium">
+                <a
+                  class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-green-900 dark:text-gray-400 dark:hover:text-green-50"
+                  href="#"
+                  rel="ugc"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4"
+                  >
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  About Me
+                </a>
+                <a
+                  class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-green-900 dark:text-gray-400 dark:hover:text-green-50"
+                  href="#"
+                  rel="ugc"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4"
+                  >
+                    <path d="m12 19 7-7 3 3-7 7-3-3z"></path>
+                    <path d="m18 13-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path>
+                    <path d="m2 2 7.586 7.586"></path>
+                    <circle cx="11" cy="11" r="2"></circle>
+                  </svg>
+                  Technologies
+                </a>
+                <a
+                  class="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-green-900 dark:text-gray-400 dark:hover:text-green-50"
+                  href="#"
+                  rel="ugc"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="h-4 w-4"
+                  >
+                    <path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"></path>
+                  </svg>
+                  Projects
+                </a>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col">
+          <main class="flex flex-1 flex-col gap-4 p-4 md:gap-8 md:p-6">
+            <div class="flex items-center">
+              <h1 class="font-semibold text-lg md:text-2xl text-green-800">About Me</h1>
+            </div>
+            <div class="border shadow-sm rounded-lg bg-gradient-to-r from-green-50 to-blue-50">
+              <p class="p-4">
+                Hi, I'm John Doe, a full-stack developer with a passion for creating innovative and efficient solutions.
+                With a background in computer science and several years of experience in the tech industry, I have honed
+                my skills in various technologies and programming languages.
+              </p>
+            </div>
+            <div class="flex items-center">
+              <h1 class="font-semibold text-lg md:text-2xl text-green-800">Technologies</h1>
+            </div>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+              <div class="flex flex-col items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-10 w-10"
+                >
+                  <path d="M5.5 8.5 9 12l-3.5 3.5L2 12l3.5-3.5Z"></path>
+                  <path d="m12 2 3.5 3.5L12 9 8.5 5.5 12 2Z"></path>
+                  <path d="M18.5 8.5 22 12l-3.5 3.5L15 12l3.5-3.5Z"></path>
+                  <path d="m12 15 3.5 3.5L12 22l-3.5-3.5L12 15Z"></path>
+                </svg>
+                <span class="mt-2">React</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-10 w-10"
+                >
+                  <rect x="16" y="16" width="6" height="6" rx="1"></rect>
+                  <rect x="2" y="16" width="6" height="6" rx="1"></rect>
+                  <rect x="9" y="2" width="6" height="6" rx="1"></rect>
+                  <path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"></path>
+                  <path d="M12 12V8"></path>
+                </svg>
+                <span class="mt-2">Node.js</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-10 w-10"
+                >
+                  <line x1="9" x2="9" y1="4" y2="20"></line>
+                  <path d="M4 7c0-1.7 1.3-3 3-3h13"></path>
+                  <path d="M18 20c-1.7 0-3-1.3-3-3V4"></path>
+                </svg>
+                <span class="mt-2">Python</span>
+              </div>
+              <div class="flex flex-col items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="h-10 w-10"
+                >
+                  <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+                  <path d="M3 5V19A9 3 0 0 0 21 19V5"></path>
+                  <path d="M3 12A9 3 0 0 0 21 12"></path>
+                </svg>
+                <span class="mt-2">MongoDB</span>
+              </div>
+            </div>
+            <div class="flex items-center">
+              <h1 class="font-semibold text-lg md:text-2xl text-green-800">Projects</h1>
+            </div>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                <div class="flex flex-col space-y-1.5 p-6">
+                  <h3 class="text-2xl font-semibold leading-none tracking-tight">Project 1</h3>
+                </div>
+                <div class="p-6">
+                  <img
+                    src="/placeholder.svg"
+                    width="200"
+                    height="200"
+                    alt="Project 1"
+                    class="aspect-square rounded-md object-cover"
+                  />
+                  <p class="mt-2">A brief description of the project goes here.</p>
+                </div>
+                <div class="flex items-center p-6">
+                  <a class="underline text-green-800" href="#" rel="ugc">
+                    View Project
+                  </a>
+                </div>
+              </div>
+              <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                <div class="flex flex-col space-y-1.5 p-6">
+                  <h3 class="text-2xl font-semibold leading-none tracking-tight">Project 2</h3>
+                </div>
+                <div class="p-6">
+                  <img
+                    src="/placeholder.svg"
+                    width="200"
+                    height="200"
+                    alt="Project 2"
+                    class="aspect-square rounded-md object-cover"
+                  />
+                  <p class="mt-2">A brief description of the project goes here.</p>
+                </div>
+                <div class="flex items-center p-6">
+                  <a class="underline text-green-800" href="#" rel="ugc">
+                    View Project
+                  </a>
+                </div>
+              </div>
+              <div class="rounded-lg border bg-card text-card-foreground shadow-sm" data-v0-t="card">
+                <div class="flex flex-col space-y-1.5 p-6">
+                  <h3 class="text-2xl font-semibold leading-none tracking-tight">Project 3</h3>
+                </div>
+                <div class="p-6">
+                  <img
+                    src="/placeholder.svg"
+                    width="200"
+                    height="200"
+                    alt="Project 3"
+                    class="aspect-square rounded-md object-cover"
+                  />
+                  <p class="mt-2">A brief description of the project goes here.</p>
+                </div>
+                <div class="flex items-center p-6">
+                  <a class="underline text-green-800" href="#" rel="ugc">
+                    View Project
+                  </a>
+                </div>
+              </div>
+            </div>
+          </main>
+          <footer class="flex justify-center items-center h-20 bg-green-100 dark:bg-green-800">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-8 w-8 animate-pulse"
+            >
+              <path d="M2 17 17 2"></path>
+              <path d="m2 14 8 8"></path>
+              <path d="m5 11 8 8"></path>
+              <path d="m8 8 8 8"></path>
+              <path d="m11 5 8 8"></path>
+              <path d="m14 2 8 8"></path>
+              <path d="M7 22 22 7"></path>
+            </svg>
+          </footer>
+        </div>
+      </div>
+</body>
+</html>
